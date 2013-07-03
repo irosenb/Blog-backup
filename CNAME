@@ -1,1 +1,1 @@
-blog.irosenb.com
+echo 'blog.irosenb.com' >> source/CNAME
