@@ -1,0 +1,7 @@
+module Helpers
+	EDITOR = 'open -a Mou '	
+	
+	def open(file)	
+		return EDITOR + file
+	end
+end
