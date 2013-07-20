@@ -10,7 +10,7 @@ categories: null
 Hi, I'm Isaac Rosenberg. 
 ---
 
-This summer I'm interning at [The Flatiron School](http://flatironschool.com). So far it's been an absolute joy.  
+This summer I'm interning at [The Flatiron School](http://flatironschool.com). So far it's been an absolute joy.
 
 What makes it so awesome? Well, three things: 
 
