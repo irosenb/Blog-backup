@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-*Are we artists or scientists?* That's the big question. 
+*Are we artists or scientists?* That is the question. 
 
 ---
 
