@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Isaac Rosenberg]]></title>
-  <link href="http://irosenb.github.io/atom.xml" rel="self"/>
-  <link href="http://irosenb.github.io/"/>
-  <updated>2013-07-20T19:23:54-04:00</updated>
-  <id>http://irosenb.github.io/</id>
+  <link href="http://blog.irosenb.com/atom.xml" rel="self"/>
+  <link href="http://blog.irosenb.com/"/>
+  <updated>2013-07-21T11:16:18-04:00</updated>
+  <id>http://blog.irosenb.com/</id>
   <author>
     <name><![CDATA[Isaac Rosenberg]]></name>
     
@@ -14,11 +14,14 @@
 
   
   <entry>
+    
     <title type="html"><![CDATA[Artists or Scientists?]]></title>
-    <link href="http://irosenb.github.io/artists-or-scientists"/>
+    <link href="http://blog.irosenb.com/artists-or-scientists"/>
+    
     <updated>2013-07-20T11:03:00-04:00</updated>
-    <id>http://irosenb.github.io/artists-or-scientists</id>
-    <content type="html"><![CDATA[<p><em>Are we artists or scientists?</em> That&rsquo;s the big question.</p>
+    <id>http://blog.irosenb.com/artists-or-scientists</id>
+    
+    <content type="html"><![CDATA[<p><em>Are we artists or scientists?</em> That is the question.</p>
 
 <hr />
 
@@ -68,13 +71,17 @@ of life. In short, engineers are versatile minds who create links between scienc
 
 <p>So we can&rsquo;t really classify programming as a science, because it isn&rsquo;t. There&rsquo;s nothing we&rsquo;re really discovering, just building what isn&rsquo;t there.</p>
 ]]></content>
+    
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Lazy in Ruby 2.0]]></title>
-    <link href="http://irosenb.github.io/lazy-in-ruby-2-dot-0"/>
+    <link href="http://blog.irosenb.com/lazy-in-ruby-2-dot-0"/>
+    
     <updated>2013-07-08T14:09:00-04:00</updated>
-    <id>http://irosenb.github.io/lazy-in-ruby-2-dot-0</id>
+    <id>http://blog.irosenb.com/lazy-in-ruby-2-dot-0</id>
+    
     <content type="html"><![CDATA[<p>Ruby 2.0 is pretty cool. Over the past week or so I&rsquo;ve been working with <a href="http://stefanlance.com">Stefan Lance</a> at the <a href="http://flatironschool.com/">Flatiron School</a> on updating the <a href="http://rubykoans.com/">Ruby Koans</a> to Ruby 2.0. It&rsquo;s been a lot of fun, and I&rsquo;ve been learning quite a bit along the way.</p>
 
 <p>One new feature that I&rsquo;ve been working on for the Ruby Koans is the <a href="http://ruby-doc.org/core-2.0/Enumerator/Lazy.html">lazy enumerator</a>. The basic idea is that you can extract values over an infinite series of values.</p>
@@ -118,22 +125,30 @@ num = Num.new
 num.enum_for(:evens).lazy.select{|i| i &lt; 5 }.take(3).each{|i| enums &lt;&lt; i} # =&gt; 0, 2
 </code></pre>
 ]]></content>
+    
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[Ruby is great]]></title>
-    <link href="http://irosenb.github.io/ruby-is-great"/>
+    <link href="http://blog.irosenb.com/ruby-is-great"/>
+    
     <updated>2013-07-03T23:07:00-04:00</updated>
-    <id>http://irosenb.github.io/ruby-is-great</id>
+    <id>http://blog.irosenb.com/ruby-is-great</id>
+    
     <content type="html"><![CDATA[
 ]]></content>
+    
   </entry>
   
   <entry>
+    
     <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://irosenb.github.io/hello-world"/>
+    <link href="http://blog.irosenb.com/hello-world"/>
+    
     <updated>2013-07-03T10:56:00-04:00</updated>
-    <id>http://irosenb.github.io/hello-world</id>
+    <id>http://blog.irosenb.com/hello-world</id>
+    
     <content type="html"><![CDATA[<h2>Hi, I&rsquo;m Isaac Rosenberg. </h2>
 
 <p>This summer I&rsquo;m interning at <a href="http://flatironschool.com">The Flatiron School</a>. So far it&rsquo;s been an absolute joy.</p>
@@ -169,6 +184,7 @@ num.enum_for(:evens).lazy.select{|i| i &lt; 5 }.take(3).each{|i| enums &lt;&lt; 
 
 <p>Suspendisse et ipsum ipsum. Suspendisse tincidunt eros est, quis auctor neque bibendum in. Aenean nec dapibus neque. Maecenas nec ipsum et diam tempus sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et nulla viverra, consectetur purus vitae, condimentum mauris. Curabitur sollicitudin eros a blandit consequat. Sed viverra, nisi eu adipiscing interdum, ligula erat lacinia erat, vel luctus elit quam in libero. Vivamus vitae sapien id lorem dignissim varius. Curabitur facilisis magna quis justo porttitor, a dictum velit mattis. Vivamus id dolor interdum, mattis nunc vel, aliquet sem.</p>
 ]]></content>
+    
   </entry>
   
 </feed>

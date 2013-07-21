@@ -1,31 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://irosenb.github.io/hello-world</loc>
-        <lastmod>2013-07-20T19:23:48-04:00</lastmod>
+        <loc>http://blog.irosenb.com/hello-world</loc>
+        <lastmod>2013-07-21T00:04:35-04:00</lastmod>
     </url>
     <url>
-        <loc>http://irosenb.github.io/ruby-is-great</loc>
-        <lastmod>2013-07-20T19:23:48-04:00</lastmod>
+        <loc>http://blog.irosenb.com/ruby-is-great</loc>
+        <lastmod>2013-07-21T00:04:35-04:00</lastmod>
     </url>
     <url>
-        <loc>http://irosenb.github.io/lazy-in-ruby-2-dot-0</loc>
-        <lastmod>2013-07-20T19:23:48-04:00</lastmod>
+        <loc>http://blog.irosenb.com/lazy-in-ruby-2-dot-0</loc>
+        <lastmod>2013-07-21T00:04:35-04:00</lastmod>
     </url>
     <url>
-        <loc>http://irosenb.github.io/artists-or-scientists</loc>
-        <lastmod>2013-07-20T19:23:48-04:00</lastmod>
+        <loc>http://blog.irosenb.com/artists-or-scientists</loc>
+        <lastmod>2013-07-21T09:49:09-04:00</lastmod>
     </url>
     <url>
-        <loc>http://irosenb.github.io/blog/archives/</loc>
-        <lastmod>2013-07-20T19:23:48-04:00</lastmod>
+        <loc>http://blog.irosenb.com/blog/archives/</loc>
+        <lastmod>2013-07-21T09:49:09-04:00</lastmod>
     </url>
     <url>
-        <loc>http://irosenb.github.io/</loc>
-        <lastmod>2013-07-20T19:23:48-04:00</lastmod>
+        <loc>http://blog.irosenb.com/</loc>
+        <lastmod>2013-07-21T09:49:09-04:00</lastmod>
     </url>
     <url>
-        <loc>http://irosenb.github.io/robots.txt</loc>
+        <loc>http://blog.irosenb.com/robots.txt</loc>
         <lastmod>2013-07-20T19:23:48-04:00</lastmod>
     </url>
 </urlset>
