@@ -5,15 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Isaac Rosenberg - Isaac Rosenberg</title>
+  <title>Lazy in Ruby 2.0 - Isaac Rosenberg</title>
   <meta name="author" content="Isaac Rosenberg">
 
   
-  <meta name="description" content="Isaac Rosenberg 2013 A Fluid World
-Jul 30 2013 Artists or Scientists?
-Jul 20 2013 Lazy in Ruby 2.0
-Jul 08 2013 Ruby is great
-Jul 03 2013 hello world &hellip;">
+  <meta name="description" content="Ruby 2.0 is pretty cool. Over the past week or so I&rsquo;ve been working with Stefan Lance at the Flatiron School on updating the Ruby Koans to Ruby &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +18,7 @@ Jul 03 2013 hello world &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://irosenb.github.io">
+  <link rel="canonical" href="http://irosenb.github.io/lazy-in-ruby-2-dot-0">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Isaac Rosenberg" type="application/atom+xml">
@@ -64,66 +60,123 @@ Jul 03 2013 hello world &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Isaac Rosenberg</h1>
+  
+    
+      <h1 class="entry-title">Lazy in Ruby 2.0</h1>
+    
+  
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-08T14:09:00-04:00" pubdate data-updated="true">Jul 8<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
+
+
+<div class="entry-content"><p>Ruby 2.0 is pretty cool. Over the past week or so I&rsquo;ve been working with <a href="http://stefanlance.com">Stefan Lance</a> at the <a href="http://flatironschool.com/">Flatiron School</a> on updating the <a href="http://rubykoans.com/">Ruby Koans</a> to Ruby 2.0. It&rsquo;s been a lot of fun, and I&rsquo;ve been learning quite a bit along the way.</p>
+
+<p>One new feature that I&rsquo;ve been working on for the Ruby Koans is the <a href="http://ruby-doc.org/core-2.0/Enumerator/Lazy.html">lazy enumerator</a>. The basic idea is that you can extract values over an infinite series of values.</p>
+
+<p>Let&rsquo;s see some examples.</p>
+
+<h2>Infinite Range</h2>
+
+<pre><code>range = 1..Float::INFINITY
+</code></pre>
+
+<p>Here we have our infinite range. If you wanted to try collecting on it in Ruby 1.9.3, you&rsquo;d get an infinite loop:</p>
+
+<pre><code>range.collect{ |x| x }.first(5) # =&gt; infinite loop
+</code></pre>
+
+<p>However, by using lazy, we can get our desired output:</p>
+
+<pre><code>range.lazy.collect{ |x| x }.first(5) # =&gt; [1,2,3,4,5]
+</code></pre>
+
+<h2>Lazy Select</h2>
+
+<p>With lazy select, you can iterate over an infinite loop and take out only the values that you need.</p>
+
+<pre><code>class Num
+    def even
+        i = 0
+            loop do
+                yield i
+                i += 2 
+        end
+    end
+end
+
+num = Num.new 
 
 
 
-  
-  <h2>2013</h2>
 
-<article>
-  
-<h1><a href="/a-fluid-world">A Fluid World</a></h1>
-<time datetime="2013-07-30T16:17:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>30</span> <span class='year'>2013</span></time>
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/artists-or-scientists">Artists or Scientists?</a></h1>
-<time datetime="2013-07-20T11:03:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>20</span> <span class='year'>2013</span></time>
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/lazy-in-ruby-2-dot-0">Lazy in Ruby 2.0</a></h1>
-<time datetime="2013-07-08T14:09:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>08</span> <span class='year'>2013</span></time>
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/ruby-is-great">Ruby is great</a></h1>
-<time datetime="2013-07-03T23:07:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>03</span> <span class='year'>2013</span></time>
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/hello-world">hello world</a></h1>
-<time datetime="2013-07-03T10:56:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>03</span> <span class='year'>2013</span></time>
-
-</article>
-
+num.enum_for(:evens).lazy.select{|i| i &lt; 5 }.take(3).each{|i| enums &lt;&lt; i} # =&gt; 0, 2
+</code></pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Isaac Rosenberg</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-08T14:09:00-04:00" pubdate data-updated="true">Jul 8<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://irosenb.github.io/lazy-in-ruby-2-dot-0" data-via="" data-counturl="http://irosenb.github.io/lazy-in-ruby-2-dot-0" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/ruby-is-great" title="Previous Post: Ruby is great">&laquo; Ruby is great</a>
+      
+      
+        <a class="basic-alignment right" href="/artists-or-scientists" title="Next Post: Artists or Scientists?">Artists or Scientists? &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
 
 </div>
